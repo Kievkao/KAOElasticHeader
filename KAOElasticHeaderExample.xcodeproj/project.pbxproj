@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C56223451C18698700145D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223441C18698700145D18 /* AppDelegate.swift */; };
-		C56223471C18698700145D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223461C18698700145D18 /* ViewController.swift */; };
 		C562234A1C18698700145D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56223481C18698700145D18 /* Main.storyboard */; };
 		C562234C1C18698700145D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C562234B1C18698700145D18 /* Assets.xcassets */; };
 		C562234F1C18698700145D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C562234D1C18698700145D18 /* LaunchScreen.storyboard */; };
 		C562235A1C18698700145D18 /* KAOElasticHeaderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */; };
+		C56223651C186AA000145D18 /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223641C186AA000145D18 /* ExampleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		C56223411C18698700145D18 /* KAOElasticHeaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAOElasticHeaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56223441C18698700145D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C56223461C18698700145D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C56223491C18698700145D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C562234B1C18698700145D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C562234E1C18698700145D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		C56223551C18698700145D18 /* KAOElasticHeaderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAOElasticHeaderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAOElasticHeaderExampleTests.swift; sourceTree = "<group>"; };
 		C562235B1C18698700145D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56223641C186AA000145D18 /* ExampleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		C56223431C18698700145D18 /* KAOElasticHeaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				C56223641C186AA000145D18 /* ExampleVC.swift */,
 				C56223441C18698700145D18 /* AppDelegate.swift */,
-				C56223461C18698700145D18 /* ViewController.swift */,
 				C56223481C18698700145D18 /* Main.storyboard */,
 				C562234B1C18698700145D18 /* Assets.xcassets */,
 				C562234D1C18698700145D18 /* LaunchScreen.storyboard */,
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C56223471C18698700145D18 /* ViewController.swift in Sources */,
+				C56223651C186AA000145D18 /* ExampleVC.swift in Sources */,
 				C56223451C18698700145D18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
