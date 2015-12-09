@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56223451C18698700145D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223441C18698700145D18 /* AppDelegate.swift */; };
+		C56223471C18698700145D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223461C18698700145D18 /* ViewController.swift */; };
+		C562234A1C18698700145D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56223481C18698700145D18 /* Main.storyboard */; };
+		C562234C1C18698700145D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C562234B1C18698700145D18 /* Assets.xcassets */; };
+		C562234F1C18698700145D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C562234D1C18698700145D18 /* LaunchScreen.storyboard */; };
+		C562235A1C18698700145D18 /* KAOElasticHeaderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C56223561C18698700145D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C56223391C18698700145D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C56223401C18698700145D18;
+			remoteInfo = KAOElasticHeaderExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C56223411C18698700145D18 /* KAOElasticHeaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAOElasticHeaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56223441C18698700145D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C56223461C18698700145D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C56223491C18698700145D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C562234B1C18698700145D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C562234E1C18698700145D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C56223501C18698700145D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56223551C18698700145D18 /* KAOElasticHeaderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAOElasticHeaderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAOElasticHeaderExampleTests.swift; sourceTree = "<group>"; };
+		C562235B1C18698700145D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C562233E1C18698700145D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56223521C18698700145D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C56223381C18698700145D18 = {
+			isa = PBXGroup;
+			children = (
+				C56223431C18698700145D18 /* KAOElasticHeaderExample */,
+				C56223581C18698700145D18 /* KAOElasticHeaderExampleTests */,
+				C56223421C18698700145D18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C56223421C18698700145D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56223411C18698700145D18 /* KAOElasticHeaderExample.app */,
+				C56223551C18698700145D18 /* KAOElasticHeaderExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C56223431C18698700145D18 /* KAOElasticHeaderExample */ = {
+			isa = PBXGroup;
+			children = (
+				C56223441C18698700145D18 /* AppDelegate.swift */,
+				C56223461C18698700145D18 /* ViewController.swift */,
+				C56223481C18698700145D18 /* Main.storyboard */,
+				C562234B1C18698700145D18 /* Assets.xcassets */,
+				C562234D1C18698700145D18 /* LaunchScreen.storyboard */,
+				C56223501C18698700145D18 /* Info.plist */,
+			);
+			path = KAOElasticHeaderExample;
+			sourceTree = "<group>";
+		};
+		C56223581C18698700145D18 /* KAOElasticHeaderExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */,
+				C562235B1C18698700145D18 /* Info.plist */,
+			);
+			path = KAOElasticHeaderExampleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C56223401C18698700145D18 /* KAOElasticHeaderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C562235E1C18698700145D18 /* Build configuration list for PBXNativeTarget "KAOElasticHeaderExample" */;
+			buildPhases = (
+				C562233D1C18698700145D18 /* Sources */,
+				C562233E1C18698700145D18 /* Frameworks */,
+				C562233F1C18698700145D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAOElasticHeaderExample;
+			productName = KAOElasticHeaderExample;
+			productReference = C56223411C18698700145D18 /* KAOElasticHeaderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C56223541C18698700145D18 /* KAOElasticHeaderExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56223611C18698700145D18 /* Build configuration list for PBXNativeTarget "KAOElasticHeaderExampleTests" */;
+			buildPhases = (
+				C56223511C18698700145D18 /* Sources */,
+				C56223521C18698700145D18 /* Frameworks */,
+				C56223531C18698700145D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C56223571C18698700145D18 /* PBXTargetDependency */,
+			);
+			name = KAOElasticHeaderExampleTests;
+			productName = KAOElasticHeaderExampleTests;
+			productReference = C56223551C18698700145D18 /* KAOElasticHeaderExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C56223391C18698700145D18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Andrii Kravchenko";
+				TargetAttributes = {
+					C56223401C18698700145D18 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C56223541C18698700145D18 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C56223401C18698700145D18;
+					};
+				};
+			};
+			buildConfigurationList = C562233C1C18698700145D18 /* Build configuration list for PBXProject "KAOElasticHeaderExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56223381C18698700145D18;
+			productRefGroup = C56223421C18698700145D18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C56223401C18698700145D18 /* KAOElasticHeaderExample */,
+				C56223541C18698700145D18 /* KAOElasticHeaderExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C562233F1C18698700145D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C562234F1C18698700145D18 /* LaunchScreen.storyboard in Resources */,
+				C562234C1C18698700145D18 /* Assets.xcassets in Resources */,
+				C562234A1C18698700145D18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56223531C18698700145D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C562233D1C18698700145D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56223471C18698700145D18 /* ViewController.swift in Sources */,
+				C56223451C18698700145D18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56223511C18698700145D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C562235A1C18698700145D18 /* KAOElasticHeaderExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C56223571C18698700145D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C56223401C18698700145D18 /* KAOElasticHeaderExample */;
+			targetProxy = C56223561C18698700145D18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C56223481C18698700145D18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56223491C18698700145D18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C562234D1C18698700145D18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C562234E1C18698700145D18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C562235C1C18698700145D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C562235D1C18698700145D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C562235F1C18698700145D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAOElasticHeaderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kievkao.KAOElasticHeaderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C56223601C18698700145D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KAOElasticHeaderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kievkao.KAOElasticHeaderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C56223621C18698700145D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KAOElasticHeaderExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kievkao.KAOElasticHeaderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAOElasticHeaderExample.app/KAOElasticHeaderExample";
+			};
+			name = Debug;
+		};
+		C56223631C18698700145D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KAOElasticHeaderExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kievkao.KAOElasticHeaderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAOElasticHeaderExample.app/KAOElasticHeaderExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C562233C1C18698700145D18 /* Build configuration list for PBXProject "KAOElasticHeaderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C562235C1C18698700145D18 /* Debug */,
+				C562235D1C18698700145D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C562235E1C18698700145D18 /* Build configuration list for PBXNativeTarget "KAOElasticHeaderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C562235F1C18698700145D18 /* Debug */,
+				C56223601C18698700145D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C56223611C18698700145D18 /* Build configuration list for PBXNativeTarget "KAOElasticHeaderExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56223621C18698700145D18 /* Debug */,
+				C56223631C18698700145D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56223391C18698700145D18 /* Project object */;
+}
