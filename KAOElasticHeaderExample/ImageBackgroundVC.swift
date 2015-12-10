@@ -70,5 +70,4 @@ class ImageBackgroundVC: UITableViewController {
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         self.updateHeaderView(self.tableView.bounds.width)
     }
-
 }

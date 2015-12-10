@@ -79,13 +79,13 @@
 		C56223431C18698700145D18 /* KAOElasticHeaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				C5622B541C1997EA00509562 /* SolidBackgroundVC.swift */,
 				C56223641C186AA000145D18 /* ImageBackgroundVC.swift */,
 				C56223441C18698700145D18 /* AppDelegate.swift */,
 				C56223481C18698700145D18 /* Main.storyboard */,
 				C562234B1C18698700145D18 /* Assets.xcassets */,
 				C562234D1C18698700145D18 /* LaunchScreen.storyboard */,
 				C56223501C18698700145D18 /* Info.plist */,
-				C5622B541C1997EA00509562 /* SolidBackgroundVC.swift */,
 			);
 			path = KAOElasticHeaderExample;
 			sourceTree = "<group>";

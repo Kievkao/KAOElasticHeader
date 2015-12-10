@@ -10,9 +10,62 @@ import UIKit
 
 class SolidBackgroundVC: UITableViewController {
 
+    private let kTableViewHeaderHeight: CGFloat = 200.0
+    private let kCenterImageViewDiameter: CGFloat = 100.0
+
+    @IBOutlet weak var centerImageViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerImageView: UIImageView!
+    private var headerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setupTableView()
+        self.setupCenterImageView()
     }
-
+    
+    func setupCenterImageView() {
+        self.centerImageView.layer.cornerRadius = 50.0
+        self.centerImageView.clipsToBounds = true
+    }
+    
+    func setupTableView() {
+        self.headerView = self.tableView.tableHeaderView
+        self.tableView.tableHeaderView = nil
+        self.tableView.addSubview(self.headerView)
+        
+        self.tableView.contentInset = UIEdgeInsets(top: kTableViewHeaderHeight, left: 0, bottom: 0, right: 0)
+        self.tableView.contentOffset = CGPoint(x: 0, y: -kTableViewHeaderHeight)
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        self.updateHeaderView(size.width)
+    }
+    
+    func updateHeaderView(parentWidth: CGFloat) {
+        
+        var headerRect = CGRect(x: 0, y: -kTableViewHeaderHeight, width: parentWidth, height: kTableViewHeaderHeight)
+        var centerImageViewDiameter = self.kCenterImageViewDiameter
+        
+        if self.tableView.contentOffset.y < kTableViewHeaderHeight {
+            headerRect.origin.y = self.tableView.contentOffset.y
+            headerRect.size.height = -self.tableView.contentOffset.y
+            
+            // process controllers in navigation stack with top bar
+            var additionalShift: CGFloat = 0;
+            if let navBar  = self.navigationController?.navigationBar where !navBar.hidden {
+                additionalShift += self.view.frame.origin.y - navBar.frame.size.height
+            }
+            centerImageViewDiameter += abs(self.tableView.contentOffset.y + kTableViewHeaderHeight) + additionalShift
+        }
+        
+        self.centerImageViewWidthConstraint.constant = centerImageViewDiameter
+        self.centerImageView.layer.cornerRadius = centerImageViewDiameter / 2
+        self.headerView.frame = headerRect
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        self.updateHeaderView(self.tableView.bounds.width)
+    }
 }
