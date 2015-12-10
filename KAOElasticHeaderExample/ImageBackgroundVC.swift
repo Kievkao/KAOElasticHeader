@@ -8,32 +8,39 @@
 
 import UIKit
 
-class ExampleVC: UITableViewController {
+class ImageBackgroundVC: UITableViewController {
 
     private let kTableViewHeaderHeight: CGFloat = 200.0
     private let kTableViewHeaderCutAway: CGFloat = 40.0
     var maskRectangleColor = UIColor.whiteColor()
     
-    var headerView: UIView!
+    private var headerView: UIView!
     
-    var headerMaskLayer = CAShapeLayer()
-    var headerMaskView = UIView()
+    private var headerMaskLayer = CAShapeLayer()
+    private var headerMaskView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setupTableView()
+        self.setupMaskView()
+    }
+    
+    func setupMaskView() {
+        self.headerMaskView.frame = self.headerView.bounds
+        self.headerMaskView.backgroundColor = self.maskRectangleColor
+        self.headerView.addSubview(self.headerMaskView)
+        
+        self.headerMaskView.layer.mask = self.headerMaskLayer
+    }
+    
+    func setupTableView() {
         self.headerView = self.tableView.tableHeaderView
         self.tableView.tableHeaderView = nil
         self.tableView.addSubview(self.headerView)
         
         self.tableView.contentInset = UIEdgeInsets(top: kTableViewHeaderHeight, left: 0, bottom: 0, right: 0)
         self.tableView.contentOffset = CGPoint(x: 0, y: -kTableViewHeaderHeight)
-        
-        self.headerMaskView.frame = self.headerView.bounds
-        self.headerMaskView.backgroundColor = self.maskRectangleColor
-        self.headerView.addSubview(self.headerMaskView)
-        
-        self.headerMaskView.layer.mask = self.headerMaskLayer
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
