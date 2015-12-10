@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComplexVC: UITableViewController {
+class StaticBackgroundVC: UITableViewController {
     
     private let kTableViewHeaderHeight: CGFloat = 200.0
     private var headerView: UIView!
