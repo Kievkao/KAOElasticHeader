@@ -14,6 +14,7 @@
 		C562235A1C18698700145D18 /* KAOElasticHeaderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223591C18698700145D18 /* KAOElasticHeaderExampleTests.swift */; };
 		C56223651C186AA000145D18 /* ImageBackgroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56223641C186AA000145D18 /* ImageBackgroundVC.swift */; };
 		C5622B551C1997EA00509562 /* SolidBackgroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5622B541C1997EA00509562 /* SolidBackgroundVC.swift */; };
+		C5622B571C19AB0F00509562 /* ComplexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5622B561C19AB0F00509562 /* ComplexVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C562235B1C18698700145D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C56223641C186AA000145D18 /* ImageBackgroundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBackgroundVC.swift; sourceTree = "<group>"; };
 		C5622B541C1997EA00509562 /* SolidBackgroundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolidBackgroundVC.swift; sourceTree = "<group>"; };
+		C5622B561C19AB0F00509562 /* ComplexVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C56223431C18698700145D18 /* KAOElasticHeaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				C5622B561C19AB0F00509562 /* ComplexVC.swift */,
 				C5622B541C1997EA00509562 /* SolidBackgroundVC.swift */,
 				C56223641C186AA000145D18 /* ImageBackgroundVC.swift */,
 				C56223441C18698700145D18 /* AppDelegate.swift */,
@@ -203,6 +206,7 @@
 				C56223651C186AA000145D18 /* ImageBackgroundVC.swift in Sources */,
 				C5622B551C1997EA00509562 /* SolidBackgroundVC.swift in Sources */,
 				C56223451C18698700145D18 /* AppDelegate.swift in Sources */,
+				C5622B571C19AB0F00509562 /* ComplexVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
