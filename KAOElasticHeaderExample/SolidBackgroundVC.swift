@@ -10,12 +10,12 @@ import UIKit
 
 class SolidBackgroundVC: UITableViewController {
 
-    private let kTableViewHeaderHeight: CGFloat = 200.0
-    private let kCenterImageViewDiameter: CGFloat = 100.0
+    fileprivate let kTableViewHeaderHeight: CGFloat = 200.0
+    fileprivate let kCenterImageViewDiameter: CGFloat = 100.0
 
     @IBOutlet weak var centerImageViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var centerImageView: UIImageView!
-    private var headerView: UIView!
+    fileprivate var headerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +38,12 @@ class SolidBackgroundVC: UITableViewController {
         self.tableView.contentOffset = CGPoint(x: 0, y: -kTableViewHeaderHeight)
     }
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
         self.updateHeaderView(size.width)
     }
     
-    func updateHeaderView(parentWidth: CGFloat) {
+    func updateHeaderView(_ parentWidth: CGFloat) {
         
         var headerRect = CGRect(x: 0, y: -kTableViewHeaderHeight, width: parentWidth, height: kTableViewHeaderHeight)
         var centerImageViewDiameter = self.kCenterImageViewDiameter
@@ -54,7 +54,7 @@ class SolidBackgroundVC: UITableViewController {
             
             // process controllers in navigation stack with top bar
             var additionalShift: CGFloat = 0;
-            if let navBar  = self.navigationController?.navigationBar where !navBar.hidden {
+            if let navBar  = self.navigationController?.navigationBar , !navBar.isHidden {
                 additionalShift += self.view.frame.origin.y - navBar.frame.size.height
             }
             centerImageViewDiameter += abs(self.tableView.contentOffset.y + kTableViewHeaderHeight) + additionalShift
@@ -65,7 +65,7 @@ class SolidBackgroundVC: UITableViewController {
         self.headerView.frame = headerRect
     }
     
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.updateHeaderView(self.tableView.bounds.width)
     }
 }

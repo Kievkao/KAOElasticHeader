@@ -10,14 +10,14 @@ import UIKit
 
 class ImageBackgroundVC: UITableViewController {
 
-    private let kTableViewHeaderHeight: CGFloat = 200.0
-    private let kTableViewHeaderCutAway: CGFloat = 40.0
-    var maskRectangleColor = UIColor.whiteColor()
+    fileprivate let kTableViewHeaderHeight: CGFloat = 200.0
+    fileprivate let kTableViewHeaderCutAway: CGFloat = 40.0
+    var maskRectangleColor = UIColor.white
     
-    private var headerView: UIView!
+    fileprivate var headerView: UIView!
     
-    private var headerMaskLayer = CAShapeLayer()
-    private var headerMaskView = UIView()
+    fileprivate var headerMaskLayer = CAShapeLayer()
+    fileprivate var headerMaskView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +43,12 @@ class ImageBackgroundVC: UITableViewController {
         self.tableView.contentOffset = CGPoint(x: 0, y: -kTableViewHeaderHeight)
     }
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
         self.updateHeaderView(size.width)
     }
     
-    func updateHeaderView(parentWidth: CGFloat) {
+    func updateHeaderView(_ parentWidth: CGFloat) {
         
         var headerRect = CGRect(x: 0, y: -kTableViewHeaderHeight, width: parentWidth, height: kTableViewHeaderHeight)
         
@@ -58,16 +58,16 @@ class ImageBackgroundVC: UITableViewController {
         }
         
         let path = UIBezierPath()
-        path.moveToPoint(CGPoint(x: headerRect.size.width, y: headerRect.size.height))
-        path.addLineToPoint(CGPoint(x: 0, y: headerRect.size.height))
-        path.addLineToPoint(CGPoint(x: 0, y: headerRect.size.height - kTableViewHeaderCutAway))
-        self.headerMaskLayer.path = path.CGPath
+        path.move(to: CGPoint(x: headerRect.size.width, y: headerRect.size.height))
+        path.addLine(to: CGPoint(x: 0, y: headerRect.size.height))
+        path.addLine(to: CGPoint(x: 0, y: headerRect.size.height - kTableViewHeaderCutAway))
+        self.headerMaskLayer.path = path.cgPath
         
         self.headerView.frame = headerRect
         self.headerMaskView.frame = self.headerView.bounds
     }
     
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.updateHeaderView(self.tableView.bounds.width)
     }
 }
